@@ -1,0 +1,12 @@
+.empty-state {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+    img {
+        width: 100%;
+        max-width: 700px;
+        margin-bottom: 2rem;
+    }
+}

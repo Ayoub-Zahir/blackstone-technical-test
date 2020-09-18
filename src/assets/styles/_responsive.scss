@@ -1,0 +1,32 @@
+// Small devices (landscape phones, less than 768px)
+@include media-breakpoint-down(sm) {
+    h1 {
+        font-size: 1.5rem !important;
+        line-height: 2rem !important;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    .services {
+        padding: 3rem 2rem;
+    }
+    .features {
+        padding: 3rem 2rem;
+        .feature {
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@include media-breakpoint-down(md) {
+    .nav-item {
+        margin: .5rem 0;
+    }
+    .navbar-nav {
+        padding-top: .7rem;
+    }
+}

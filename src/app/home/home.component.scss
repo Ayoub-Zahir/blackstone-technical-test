@@ -1,0 +1,68 @@
+.banner {
+    height: 50vh;
+    background-image: url(../../assets/img/home-header.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: left center;
+    display: flex;
+    align-items: center;
+    position: relative;
+    .banner-content {
+        z-index: 1;
+        padding: 5rem 3rem;
+        .title {
+            font-weight: 400;
+            font-size: 2rem;
+            letter-spacing: 3px;
+            line-height: 3.2rem;
+        }
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.55);
+    }
+}
+
+.services {
+    padding: 5rem 3rem;
+}
+
+.products {
+    background-color: whitesmoke;
+    .product {
+        padding: 2rem 4rem;
+        .img {
+            height: 50%;
+            width: 100%;
+            object-fit: cover;
+            margin-top: 1rem;
+        }
+    }
+}
+
+.features {
+    padding: 5rem 3rem;
+    .feature {
+        .icon {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.description {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-top: 2rem;
+}

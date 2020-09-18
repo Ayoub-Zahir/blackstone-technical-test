@@ -1,0 +1,28 @@
+<footer class="bg-primary text-light contact">
+    <div class="container">
+        <h2 class="title">Get in touch</h2>
+        <form (ngSubmit)="submitMessage()" [formGroup]="contactForm">
+            <div class="form-row mb-4">
+                <div class="form-group col-md-6">
+                    <label for="inputName">Name</label>
+                    <input type="text" class="form-control form-control-lg" [class.is-invalid]="name.invalid && name.touched" formControlName="name">
+                    <div class="invalid-feedback">Name is required.</div>
+                </div>
+
+                <div class="form-group col-md-6">
+                    <label for="inputEmail">Email</label>
+                    <input type="email" class="form-control form-control-lg" [class.is-invalid]="email.invalid && email.touched" formControlName="email">
+                    <div *ngIf="email.errors?.required" class="invalid-feedback">Email is required.</div>
+                    <div *ngIf="email.errors?.email" class="invalid-feedback">Email is invalid.</div>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="textareaMessage ">Message</label>
+                <textarea class="form-control form-control-lg" id="textareaMessage" rows="6" formControlName="message" [class.is-invalid]="message.invalid && message.touched"></textarea>
+                <div class="invalid-feedback">Message is required.</div>
+            </div>
+
+            <button [disabled]="contactForm.invalid" type="submit " class="btn btn-outline-light text-uppercase mt-4 ">send message</button>
+        </form>
+    </div>
+</footer>

@@ -1,0 +1,44 @@
+<!-- Banner section -->
+<section class="banner">
+    <div class="container banner-content text-light">
+        <h1 class="title text-uppercase">
+            <span class="font-weight-bold">blackstone:</span> The entreprise AI experts
+        </h1>
+        <button type="button" class="btn btn-outline-light text-uppercase mt-4">get started</button>
+    </div>
+</section>
+
+<!-- Our services section -->
+<section class="services container">
+    <h3 class="title text-primary">discover our services</h3>
+    <p class="description">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro deleniti quisquam consectetur explicabo temporibus eveniet aut error harum reiciendis sint officia iusto illum voluptate, ab placeat natus voluptas? A, facilis!Lorem ipsum doloramet consectetur
+        adipisicing elit. Porro deleniti quisquam consectetur explicabo temporibus eveniet aut error harum reiciendis sint officia iusto illum voluptate, ab placeat natus voluptas? A, facilis!
+    </p>
+    <button type="button" class="btn btn-outline-primary text-uppercase mt-4">learn more</button>
+</section>
+
+<!-- Products section -->
+<section class="products">
+    <div class="container">
+        <div class="row">
+            <div *ngFor="let product of products" class="col-lg-6 col-md-12 product">
+                <h4 class="title text-primary">{{product.title}}</h4>
+                <img class="img" src="{{product.imgURL}}">
+                <p class="description">{{product.description}}</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features section -->
+<section class="features container">
+    <div class="row justify-content-between">
+        <div *ngFor="let feature of features" class="col-lg-4 col-md-12 feature">
+            <span class="material-icons icon text-secondary">{{feature.icon}}</span>
+            <h4 class="title text-primary">{{feature.title}}</h4>
+            <p class="description">{{feature.description}}</p>
+            <button type="button" class="btn btn-outline-primary text-uppercase my-4">learn more</button>
+        </div>
+    </div>
+</section>

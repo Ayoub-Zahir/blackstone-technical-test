@@ -1,0 +1,27 @@
+// Style for contact us form
+.contact {
+    padding: 5rem 3rem;
+    .title {
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+    }
+    .form-control {
+        color: #ffff;
+        background-color: transparent !important;
+        border-radius: 0%;
+        border: solid rgba(255, 255, 255, 0.25);
+        &:focus {
+            border-color: aliceblue;
+        }
+    }
+    label {
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 1.5rem;
+    }
+}
+
+.invalid-feedback {
+    color: #ffff !important;
+}

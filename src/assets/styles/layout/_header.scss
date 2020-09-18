@@ -1,0 +1,18 @@
+// Style for navbar
+nav {
+    min-height: 88px;
+    .navbar-brand {
+        font-size: 1.7rem;
+        font-family: 'Pacifico', cursive !important;
+    }
+    .navbar-collapse {
+        a {
+            color: #ffff;
+            font-size: .9rem;
+            &:hover {
+                color: rgb(255, 255, 255, 0.8) !important;
+            }
+        }
+        font-weight: 700;
+    }
+}

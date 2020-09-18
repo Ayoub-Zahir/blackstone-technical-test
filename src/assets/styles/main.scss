@@ -1,0 +1,16 @@
+//Base
+@import 'base/reset';
+@import 'base/fonts';
+//
+//Abstracts
+@import 'abstracts/variables';
+//
+// Layout Styles
+@import 'layout/header';
+@import 'layout/footer';
+//
+// Bootsrap SCSS
+@import './node_modules/bootstrap/scss/bootstrap';
+//
+// Responsive
+@import 'responsive';
